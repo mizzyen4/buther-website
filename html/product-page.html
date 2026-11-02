@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Halal Meat</title>
+    <link rel="stylesheet" href="/css/bucher.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (Keep your existing header code here) -->
+  
+          <header class="header">
+        <a href="#" class="logo">Halal Meat</a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+                <li><a class="active" href="/html/index.html">Home</a></li>
+                <li><a href="/html/product-page.html">Products shops</a></li>
+               <li><a href="#" onclick="event.preventDefault(); document.getElementById('contactModal').classList.add('active');">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. MAIN CONTENT AREA -->
+    <main>
+  <!-- ================= PRODUCT SHOWCASE (HERO) ================= -->
+    <section class="product-showcase">
+        <div class="showcase-container">
+            
+            <!-- LEFT COLUMN: Images & Stats -->
+            <div class="showcase-left">
+                
+                <!-- Main Image Area -->
+                <div class="main-image-wrap">
+                    <!-- Replace 'your-image.jpg' with your actual image path -->
+                    <img src="https://plus.unsplash.com/premium_photo-1723672929404-36ba6ed8ab50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="thumbnail" >           </div>
+                
+                <!-- Thumbnails -->
+                <div class="thumbnail-gallery">
+                    <button class="thumb-arrow" type="button" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+                    
+                    <div class="thumb-list">
+                        <!-- Add your thumbnail image paths here -->
+                        <div class="thumb-item active"><img src="data:image/jpeg;base64,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" alt="Thumbnail 1"></div>
+                        <div class="thumb-item"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA0wMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgQHAAEDAgj/xAA/EAACAQMDAQYEAwYEBQUBAAABAgMABBEFEiExBhMiQVFhFHGBkTJCoQcjUrHB0RVi4fAzQ1Ny8RYkgpKiJf/EABoBAAMBAQEBAAAAAAAAAAAAAAEDBAIFAAb/xAAtEQACAgEEAQMBCAMBAAAAAAAAAQIDEQQSITETIkFRBRQjMkJSYXGBkaGxFf/aAAwDAQACEQMRAD8ArPU+1d9fjZGRAh/LEeflmg0hLHNw5A/gHJ+9eYlnn4gjPyjU0X0/Qg4V7iQvk/8ADTn7mhhLoY5ysfPJI7GXEcOrxMQ0cYbP7v8AET5ZPl86u1Znctc20ryLLGBsSZyqt5kDPBqrtP050J7hAiJ6Ec08dndS0XS7Y/4g13POMkQxgBCfQtn/AErLY7wYjuYxWi6jPBiNbk7OTJ3pyfY81Ev+09vaTF/iJC6f8lZGbcfXrSvq3bTVtYmNtsjsNOwVSCM8sPdh1P6UMeCKEd5FCJDxgZ8/YUuTGaemE+ZBnUtfZxbyXqyO0qd4p352DJGMVvSVkv5Y7exsXmlZsruc8L6n0FQry6PwUa3ZRpwdsa7fwr7kV2N1qMaLDBvhwviMOVJ+orDky+NFSXpSyWdpHZa1tIhJfQRzTsPEvVR8qUe3HarSNKimstD020ur1TtllZf3cP1HVvalqe7u4oZPi9Yv4k2chrptp9qCxwxaqFjiuYobWHIAIwz+/NM38cIknpXl73ls6w6wyW0h1O4hTfjCImWx8qL6YxmtWCWYKSgNumPIrlp+k29ngwlHbr3hwzfejAUyS7cg4HCpjBx51id3sh9H09Lmw1b28USKBHae7MpY1Ps4rueUQWkdnljtXw9fpQgPy21olOeQWGa7JH4lkKjcOnFK3P3LvBBJqBamk6elhbBd8bSsv7xwPxH29q49oNZj0TS5rt1EzIDshXq7ensPeq7eWTZlRhenIqF34mW4iSCecupUlcBVGOSSabG1vhI51mhhF77JgXU9fh1DUPjrmVHuHIMhTxbT6D5VDGub7sCytN8rt4Sx5Y/ID+tcY+x99EFSF7UoegE4z+tNuj6LYWNmGt5GOpH8cz4AT/KpHl703O1Ee1Wz4wkCr2TVyp723RJRxgFSQffmhKWOvSSqXljiQ+pXP8qcpbaYoFeC3bH5g/PX515uNOcneGiVOu3dn+VKd0l7F0dDR+oHWumTsAJNWhQ4/MP9KM9nLOxt9Xjn1bWrPuIP3mHIQO3lycefP0oWAO92Y8YPIxwPrXuQd6uyNTIRnBUZyPf5VnzP3GP6dU1wy1Ytc0iX8GsWLN6C6Q/1qRHdwSf8G9gkz/DIpx9qpuSMmMKlu+fzHbndW1gt++/exhJV5CmMMw/tW/OK/wDLX6v9Bztjc/E63Jd3dtcC1gbuope7yrAeefc5oJcXMFzHErF0jUYRTnii0GvrBZ9ywBgRCGJ6jPnznpVfSXskoJVjtUZrdc9/JJqdM6HjIZCRv4ldsZNZRLQ/hotJtklEbPtySRzyc/1rKYTA/R+z0MlwsdjbTFwMKsJxx74/rTzB2Cto7AyahJb2eByRztHuxNb03tYNPsXjg0WC2IBwyvwfc+Z+tKetX+u9o7rajl4B0Y+GMfIedJT/AHOjLK9MUor/AC2QNWbTtNujFa6itzbj8UyoVB9h0FA9XtJr7Y0Je0tsHa82Sz++3yHz5ptsezNvE3eXxluZ/wCLGFHyFEL2CO4j+Fit1MSNyxIB+WaHligfZb5e+CsLjRRNEO7v4srwudyE/PioJ0XW0ybebeB07u5HP61cWj9gxqDbzCUg/wCpIcjHsB1ppvOyPZHTbJTe26KoHMhdgzn2wf5U1SyskVkHB7X2fOLx9o7Uh2F4Mef4qYdAbtTqTL8TfSQwN+aRRk/pT1JoFhPfzS6dBNZ2yYCI8pYtzyTnp8qlx2ARtjbUA6nJyR7f60uVsUVUaS2XLeBY1fRZcRLE0d2SPG03IQ/X+leItBvDErObcIB1EBGP1p9i06xDLJkhsDarDIH+/epDRPfqLS2y7NwceXz9Kx5G+EUrS1rmXIjRdm7KXCPLKZT/ANN2XPsBmiJ/ZvqBiDxS30RPTE53AfLBqytE7N22mgSuqy3A/Pjp7D+9F5JxDG0krLGijLMxwAKbGDxlklt9ecVr/pRWs/s7urKLvk1K/ll690QA/wBOMH70vRafqb/uodY1OKQZBWaHgfM5q4tc7SvqRa304mO2/NORgv8AL0HvSHqUJuNRDd8xLERqN3DHpkUFLnAJwkoKXTftkFaBDe2t28mqatJcIuVWInwuemaOWFxPM0qWo3cEMACR9K9LZ2NhMpvG3t08IPJ8hjyHua3HrMHeCOGfu1YgBU8JJI9KDsePShkdLKX45Y/Ygx2t4Hfh8jjzJqM0VzGzGVyM+ppotv8AEXDi3Mpj9FGM/Wo09uFuCJ175vzJu3YPzrHl+Ub+wfDFxjKnR2HyNa+KuF/50n/2NMa2dg6nvkmjJOPAuQv35qfpvY2HUbpO6nWS1zmR14ZR6Y8jW1JPonspsrWZIH6F2c7Qa1YfGWrxpASQpmfBfHpweK7ydne2VoTssRIv8UTxkH6ZBq17aJbaBILeFUijULGi8AAeVeu8wD1/nTNiJ/JJMpa6i7SQKEutHn7sHJHcOB9xUB9Q8fd3Fm0ZyDgMR9wavmS6ihieR22oilmOOgFUxriXuu6zdX8uEVvDGp/Ig6D/AH5mhsiMWos+SLPYLrVuwjmls40HJTBD/OlW50+6syywSCUMwUt6c+VM8rS21ubYPhScsRUL4uCyuEeWPeFBIXpuPlRSS6MznKbzJnSN2hjSOOB2VVAB2nmt1JXtQQoG2NP8ojGBWqJngOTWNluV5reUKOVXduX54PBrw1rHPyt0rDP4ZVK4HzFWlEljptuSFjhjH4mc9frSf2k1vSpC0dnpQmkbg3GNm33Hmaw/SNjvnL0rIJublI4I4LSFlZeC2N2PtXuKQwBbhGiuDHy0bDg0n61riaTh2vhJJ/0EHi+pHAoT/wCoTLC0sd7B3kwxJCHwYx5AZ6+5pTrzyiyvVOEttnRaVx+0VreNokgg70DAPIVf7/Klyxv5tY1Rp9QuWuJNnhDYwD7L0ApGOp946pEQ8rfkVgR8yfIV0t9YmsriWe1iikCrhiOP9/ambXtwSb4xt3xXBZ8kJ73dvkU45YgVyBHetnoPM+Z9aSrX9pqd28N5bA7gAWxjp8v7V1g7SWN2mEuTESeu/p8hUzpkdWOtg+xunvO7O0cjFebPUbm1dpbed4yeDsPUeXFLlvBEZN51XeDyFYFf517ur1Lf8Pl1Oc15RaN+aE1hjana7U4MbrrvfMb4gf5Yobrfam81CBhPIqW5XDRxjhmPQn36UAW/tZAASCG6HrUXVb+2NncRwo88nh2BFzg+1FObeDE40Qi5JLJJl17u7buk3qnUoRyfn7UF/wASlm1K2k7wALMuOOBzUNrj4hUSa3uYXIxmSI4H1HFcbCW1TUIme4jlWKQMURhuODnHPyqnbhcHI8jnJSkx31+LVrdkO7vOvhjILAe+cY49DQ+2naSVG+D7rumVt0qruyPqaJyatbXVwz98mST4WbH6V6lMbLvkdFTHUkCp8ySwdjZXN7gwNUuLuxMQOXjOWMfG5T7fPrUITzJuaMMS68luSo+dRNLvbS3vO9h1CKJwOdvi4+XnTTa6lpN7AYWuLZpD1IXZk/KsDM7ekLjtKE3KxwRwCuP0FGNE7d6TolmtpdWN4ZWP72WLYSx9Tkg4+9Dp7HuXkaK4t5E3HbscA/I1D7yKSNkureOXB4yuf1owlteQ3UxvhgsOy7d9nLsKE1BYieAtwjIf14ozFe2dy4+EuIZW9I5AT9qpg6RBcS+GNwx6bOa6XvZllsVDT4utxKKVwxHGAT6daojd8nLt+nuP4Ru/aL2jW2KaPAxDsBJc+WF/KvHrjP29aSbfU2lkILHb7UAlWa3LR3KsJS2XyOT6V7jk7uIkAgnzpmSHbh4YTup1lcbM9aDTd/es0tvHuj6b/wAoHqSa9alI1vpjuoPfSYjjP+ZuB/P9K7ajdx2kcKwRgRRgfu/IgedBvg1Fcj3osPZ+10u3guoopp0XEkhX8Ryc1lVw+pXEjFlZ8HpispPq+S9Sqx0MWsdrbm4kEl9MWY52oDkr/ak7We1d3JujhzCpXBIPJoTLds77LfMrnqcZFSodFaVN107NIxwkMfLE/KmKMYinZZZHC4QFFyTMryAuAclc9abNB7P22t4luYhZxA/jdsA/TzqVpnY026i4uLaa4c8qiKWC/PHWilnDIbna0L7QNpXaenpTG0SbJZ6PEljZaYrxwWcD7SRuP5h9KCSy2Jba0E9sSOTE+R9mH9acbmwRoxHDEygDgY86Gw9l7i4f98VgT+Jxk49hWdyRuNM5dIU5NKinYtbX0RJ52zRFD9+ah3GjX0YJFoJV/jgcOPsOauLQP2f2d0hMcJmCnmWY4TPoAKm3H7OFilDjTElU9RDOU+vWhu/Yc6pJ4cln4KDS4ntGIR5oD/Ccip0PaK/RFVu6kAOBlMMfqKb+1uiapot4xksbo2DnETTR7tp81Jxg+xrrY2GmaNFDqGp28Px7DMVui4Zfdh6+9a4xkTLMXhkvQdEnvIVudTtks1bDRwK7Fj7nPT5U2NYwQ2G2BBEVPkuM/WktdY13VbgpptrMvP4YIj+p/wDFNVh2c1V7JpdbuvhUHUSSZb7Cs5S5ZlKUuCBdarDpuRcXzbwOIkbcaAT9q5XLAWts65PiniVj/KjjdltEgmb4ia/ui3iCriEfdsk1IXRuylsV3aPczMVz47on+VZ8sF7lC0N7/KJn+JWcg/e2Ftg8/uiU/QHFbaXTJYyrRXEYP8MgYfqKeJLXsoI0CaIiE85LFiPua5W+laVPcJDaafEZpDiMPC2c+2Mig7ovobHQWxWZPAm28FkoJt7tlyMcw/1B/pXpNMdWV4bqJsNnDEj+lXhYdjNNFkiXa5uceJo22hT6AdK4z9hYwSba74/hmiB/UYx9q21ldCIWuLwplOwpqtvNI3c/EwMc92kg8/vj7Ud0u7sWRVuJJLObHMU0fP3pv1LsFc3EexoraRQc7kkKmly+7F6jZsXjh1GCJR1im7zb/Pj7UqUV8YLar7PaSf8AYQsJZIJgLS8t+Dkqcrn70T7Qb/iYH2pkrjO78R9KrxLbtFCe8silwQfCjIFkb5Z4P358s1M0PWdR1O57u+R1W2bxjlWX1XB8zjpWfHnpjJ6p1zTsi0T9WsEvt0r5SQnqR0NKtwhS6aA8sj7eOhx55pwvYJrpX+DuzHu6xSYw3yI4/Sk/V5zo8LSzQsxB29D19/SmwjJdkequqtw4LkHatci51uxskJ7uJu8cdeR0z/vzqRqbbm5A5H6UuaBeoNd+IvWA73cCzHoTTFqCvHOJVwQMMCORj1FMkiSDWeTra2Oq/Dp3WmSSJjhumaypkfaN0RVW3iUAYwvStUr1Ff3f6gJpWly3NwLfT4hycNKR4R9fOnrSdDsdPw25ri4H4pX459vap9tpyWUTxWoUIgG+TcBn0AHkK6+CPOWBb/Lz+tKnNnRq08MZlyE7C6khKCNQABgAjNcbxop8yyQosnVmXoR8vWowldF3DKj1NcWuEZTGCOeS39qVllOyPZ3a1VANsw8XI2+dFtC0B7/E113sdsD4fIyfL0HvULQTp8d4DqsziIAFVClg598dBT7a6hY3Cf8AtLuCT0VXAwPlVFcE+Wc7V6ida2wX9naIrbwrDFEIo1GF2eVbuNSgtIDLdSd2vlkfiPoKEdodctNHj3Sq8k7DMcIAJb3z5D3qsNb7TXV3dfESvtxwgB8KD0A/rVJx8Nh7tp2hn1G4Sws8M/Endk+GFeoZ/U9D6DPrSnbWgtJ3meZJJs+KRl3MT7Z4Fe+y99Y6jrN1Jq8rRgwZEijaCwZRzgemOtEL7QtN+KWTS5/iVBBKCdGI98/3pUrXB9F2n0ytWc4DPY2PUp75gupRx2tsSZYhAm6QknALYzjHn1ox2omjntO6hnQTqQxjz+PHUfOlD4W50WdY4tzwXQJkMLZGedvTzH8qgtcM8YJZy+/HXqMevqDSLbHL2OlRpNrUs5JjsVyqHKeXh5HzqVBFD3bCVlX9ysgl8156Y88iuL2bWkls1wfBNEGKe/n/AH+teQoJCqduOh9qRhlzafRzkC93GxRNvIODgkevzp57Nab/AIcou5UCXskYAD/8peg+p8//ADUDsZ2eF3dC9uAXtYOEDfnfz49BThHuluHJASNORk7iT8qqor/MzjfUdVl+OD/k8/Fy8M0COT+J0HP6ZrS3hVWCzODnq2Djz/0rvNE8qbEkiDEc4O0/2qGbSXfiRH2DOcLu5x5YP86qOSEEvlMQJnj3f51Iz0pY7d660EI0+3YGR/FMynhR+UfXH2ooRHCrSzEBUG45BUj51WvaK/t9U1V5reI7cne+45f0OPLFJuntjgv+n6fyT3NcIl2cjxA3BxgHH/aRjOPqf50O7QXUVtaxtDJA15M/7zYCWCgcEn55610lnFtp8FuSoaQ98+ScsDwMn7VGv7YX8PeKQbgc9Mbl/lmpaniXJ1tXW7KXt7PEOsQrbKFP78jDMR0+VRry2fVIvhSu9rjwjkD680K3BbgR58e7BGehqfJera3cWCeMnKjpVp86Rn7EaHbpsuLvD4/IXYg/YCu1poljbJtg10d107m5iLAfUAEfQ161bVYZowYTuY9cgil+SV2bLGvBwMR0CyY5+O0058xIw/TFZS34v4jWV7B4tO10qzu0xBdSxXJ6AqFLfbg0IWdmmeJZY5JImKvGfAyke3Q1LgnutOmMV0skL9SjDBPvioWuWcesyC4SURXij/i7fxem4DqffrU6a/MdaUJQW6lky9f9zH3c6OGbaY28Dg+4PX5jNQUxHKveJvIPCKevsTS0NZvtOuHtr5EmUcbJOQR7GjdpcJe2rS6Y7RSoue6cZA9georXizyjNevcfTYggZQ7ZuJjEF6KFzgeQqJd3Ecc3dou6Unw56gepqdptvYapYJcQ6g0U+3EkMtux588MueKGazawaaYLtnmLMNsmLdsR+mSeueen/j0annk1frIOHo7Bl/qTvG0WX8PQk8mhXiuBwTv9KIy2MN3IzWVwhbGSoPP1HUVCit7i1lDMmVz1TmqMHIPMMLxqSQ3dk4dRxke9TJtP+ChMi7tzHw7Gwx/0qXHdRyR5aMlgM8edRriS6VgYZFO1t2HHPyz6VmURtdzimsm7LXL3TQi7diswU58Sj6H+ddY+0Nyzz2sEIj2nvE/i+h60Kub6WaKVbuLKN+B8YCsPeti8X/2827lQUYY5x5UuVa+CqrUyi+JFhaLcW/aLs/DGkoF/E7bFl4JGeRmulzpl3a2ZmvsRLGchThix9sUgabqxjudtsjRFXyssR5UkU92us/4zaHT7wst9GDLbOwBEhGQVPlnBpEoYLq78v8Ak421xewfv7C7uLdwcEQSYAHGMqeD9QaOw9q9dscC9NtdhQCRKmxvuPp5UvrDNHGrDIXoMg/Y+lFBpt3q86NLbtExxvuA2OPXHr8q8rJLoZbRVLmaQXs+22nNPGtzpV3bSMQoe3IkQE+2Qf0oxZatbaojTaTqnhByEkjMYU46HI+v1pZsuz9jZTma8ukYIx2KW2/emSCOERqIVUR/lCDjFMV7OfbpKs+kHdsNZuLSzigWaNp3JUt+XPPI6ewpK0ezjubgtc4AizLI7H8Kj8X3pt7RSWSoGkS2kuB+DvhwB7frSla3d1FM+2/EcTP+Eg4A9NozxjPHSkzk5Pk6ekr21YijvKsd7Pc6hOMIGGxMAgjp9QOKhNcC2tZ7pkRo14y/Qnyx6VJ1W7hdIhYgqj9V4GBnH0zyce9LXa6eJbBljnI71l/cg5wFxyT70IwcpD7bFVS2wLp8jXWotO3RSWwOlSLiQy3TPnjoK8aLD3dhJctxmvcCbuT581cfLPs1JkKMCvDRF+fTmjGl6Ncaxci0tFUyEZ3NwqjzJ9qaNO7FaZBLjVNWeVQ34IIiqn/5E/0oOSXZuFU5/hWSvcYrVXlb9kOy7QIU06GRccMztk/rWqz5Yh8Ugl2r1bStMsM6qiTs4PdW+0M8h9h5fOqqF6stz3scQgBbKopJCj0HrWr64ubgvfXrvNcnxM7jge2PSgK6pOJozBEO8Q7lLeXvXpLeyytKiPLIfai8We+IQ8rkAAcUzdj9PMNo91fIw71MRxHguvr8q46V2eZ521fV+rNvigZevuR/T2qXe3hmyw2nH4SOufpTYrCILp75ZRx1LUZwy28UjQRjO2KHwLj6daB39/JbMpSUlzwwJ4x7ipN5OIVOXLuecdcUDnikmbewyTzxWhRLbUoLzu47yIN3X/DZTtKfL0qanxWxTpt4JxgboroZZvr50Adf8pBr1byNGwOeB5HpQweGS9X4HTIb/VI4rdZpO7BjmDtuweWUeJenofnUaMC5UtY3Edwn5lB3ffzFbguY2UiVAyN+V/EuPQ5FQbjQ7CRknsp5LG4zlWRsoD7eY+hrwSS7vFnvEZdvPHIH0ri8NvMn4Mc8tGcMQevHSo0s+v6Yoa4hj1C2H/NXxH7rgj617g1XSL4gM7WknpN0B/7hx9wK8A8nTbq3Pe2cmCOQfM/OutrrNxHqML3sB3rwDGCCT6/OiTafPBCskTiWJhlHRshh7EcGh16gcbZo2z5EVlxTGQslHlMdNP1290y6WK5RbqNGGO8GSvXmjXaDtHctpBnhG9Vwzd2ccc/y4qqbfUL2y3KW7+PphvxKPYmnDQNXtLyJrbvAiMckSdQcYOamnVjo6NOpTeX2QbHtIt5qMSy2jtvIXwS88nr05o3c9spkJVrkJjhVhU4GPLNKusaPJpN5uhbCbtyMPT/xXG8VxfRyKwfegYMw6fP7UfEmVfa5Z9SyN7a2msQd5HZhnjA7yRj4ifXy+1DPjL+9tZpk2JCcvwCCR/SofxMj6THbpIq5PiRPxEkk8+1Tr7WZLnS7q0XZFFBGEjVeMjIBoeNIL1FmOHgi2tvNqKzvLdnvVBwqeFRheB/v1pd1KX4i6EcYyFwAPU0QfUE04TW9jN8RLJhTOB4U9cep964aTbrNcRlF4Q5NNjHBz7r93BOvkFrpcNvkhmIyKzRrSTULtLaIquR+JuMD+/tUPtBOZr4KhOyIcfPzon2Od2uEZnICy4wB1rUnhcE0IqUsMtzTdHtdA0SZYG3SyJh5GGCx9KAyKNwOMnPIptkhXUrBWjbCkBlPT7igh0+6iuNqwE5yQ/UZxUk25YOzopwrjJZ5NW9tc9yvdjwnkZJrdev8RvIP3TqoZeCNtaoD8WP2Qu6v2P1aCE7ctvITlsYB86k6H+z5NLtxf3aRp3eT3Wd24j8xOce/+xTXc9pBrGox6dpe4xFh3soXr7DPSo/7RNfj06zGnwtmZ1G4Dqororg+bnZKfYha3f8AfTtFHyAeucjFDWVpHCqpYk5Ne9MtLzVrvuLK3eZyfGFGfv5CnvSOxsVmFl1qULn/AJUXJPzNFmFl9CKNEeYblQsx6KBXpOzV6iM72zjj+GrXXVtA0kpFHCkflnG4/fmi1prGl6hhYZY5SeAuOf1obkbdViWcHz9eaHJGCWjK+5oRLZmI8fpX0nrFjpQt2kukjhwPxYH8uar++0bQ7+fMd9AHyeDFsDfbAzQc0uz0KZzWYoqV3KKRk1pbpwgXPHvTt2h7CX8GZNPiS4hJ4ETEkDHoaSLm0mtXMU8To46qwIIobk+guEo9okWeoSQN4GIJ8xUq4j03Uxm9tVEh572LwP8A2P2oSikdRXYPtX3oMB1TR9Q04tL2f1Lcp/FC5Ck/MHwn9KyPtC8DiDXdPaPnBkiUg/8A1PH2IrxHcyIc5J9aIJqSyx9zcKskXTZIoIx9a9kG06xR6ZqI3WVykgJ/Cpww+ankfy965y6JJGS6AsPVeoqDNoum3D97ZzSWcucjYSQD7en3qTBqfaLTFKTxLqdsvR1PjH1HP0INFA5Rq8W6liUPPLIF6BvKorNcoBmPef4vb70Zttd0jUpNqy/D3JG3u7kbefn0+5FdrjTJYhveRRvG5NpyMexFHCNKcvkCR3MsDbECSs53luRt9q5TSzkyhnwJfxqvTHpU64t5U525yOq+dD2WRnxsb7UMI35J/JxVMA7eMdMUe0hTb2M8+AfDUPT9OllfO3aPMtRbVTDbWy28OTgZb39P1oA/YX7hyxZzySc4ot2TuHS4KPINituC46ZoPjLAUSsbaRQWgK5Iw24ZFBrKNRaUsln6J2h+EkaOcu0THqv5aJ3PaK3jjyqB8HghsZ+VVNcXeqRPvZQ0YHO1eAPetN2lbuPBET6g4HHrSHUytX1vstP/ANQaW/icNuPXisqrIu00RjXOM/8AbWqHikM+01lh6JqC9ndLGrakpN5dITbRFQHI/jb2oJZ6Fqvau9bUL+R7azdstJIPG4/yr/Xp86a00y3+MN5est7ckg946DavptXyA8qH63rksYeOzOSp2luuT5gfKnSt9kTV6RyWZMMvcWnZzTRb6ciwrgDgjc/u7daUbvVNRvwxklfu842g4U/3qEl5LLLI9xIwccFjyK7sd2G3BYuN+PCrH0Hqaxl+5fXVGCwkd2ljkLBkbB5wT+H5UW7BWksmpvKspVYepXqw9qVrmdmXYCAvkqjn6mpui6hdafdRzW0kgywLIOhHy6etBS5G2Vt1tIt2+sodQiMdwGKMOST0+lVzrmm2dvq6xWHeusfLq3RT86bbHtXbzphg7eLDPtwp+VFLSfSdQdo41jaR+WBXk01pSOdXKyjtPAgNrNzbOqEkDHAPpXKWWw1i8VNR0uG6cH/iEEEfMjk02a12OjuZQ0E4iT/t6VM0nQ7GwyYgJZehZucVjx8jZamp15xkCv8As67O3kAY2AtnK+HuSV2+fTPWlXV/2Syo7Sadf+DySVd2PkRVuAk1lN28cHO8jzyj5z13slqujAvMiSw54kiOfuvUH70us3tx5Gvqe6sba8jKXMKuD69R9arTtb+zGSfvbvRzG0pO7afCT7eh/Ss8rsZ93JccMqMGQdCQKmW2pSQHlj881vUdNvNNn7m+t5IJOfC4qA45rQoOh9L1U7dRtkdv+op2t9xXaPs7qdmne9m9T76IYJtZ8Y6+h4/lSzuKkEZ+lGNL1e5hCkSNxxnNEGDodZNrN3Gv2M9lJnAkRd6/brj5E1LgvdPnAeLULXA58UgQ/wD6xTVaSWXaLTTHdxpMQuHDrkr9arvtf2bfs8WMB7y1uCMH+DzwaJnIxi+08YVtRhyDgCL95uPzHH6k+1QdSBMQIGCy7iM/pSPp0oiv7d3xtDjOftVl6pZM1qrrgsoyQPMUMGosXYE3EZ60waVGVZfTzNAUysgOMe1NWjPBKqhm28fegaJs5tTG+6WaEhMkKMqw888j9KhXOgr8KF7i3umEf4oTiRz7AHPT2o3JloZRaXELoWVe5lXA3dcHgg1q+gRJVSS2a0DOg7yIk5xyCOMcH60QClPoKRyssc0yIOimI8e1ZTZPNMZn7vXHRQcBViYgfXFZXjwz62Ph7afuyeFyCTSWXzp8TbVBkLq2Pv8AesrKlidpfhRFkQdxK3OUK4+tSdQdhZwoDwqqB7Z61lZQkOr7BzEvsVicKMCi8qKumOR1wq/TNZWV5G5do1pJZkXLHAzxn06UwdmD/wD2owMjgkcnjHt0rKymwJ9R0yZrOrXplcCYr16cYwCf6U0Qx9zpEARmGI1bOecmt1lNic3UpKEcHTT5nkt0ZzkleTUusrK0RmixCnFeN59ulZWV4Mfcj6vomna5ai31O1jnQ9Cw8Sn1B6ivmbVYEtr+4gjJKRyui564BwK1WVmJogmu1r0asrKJ4aex0jJqsKqcCThvemrtTYwXnZ+7Fwu7ZGWX2IFZWVpGGUTnpVw9k7iTUuyVvd3Z3TBmj3eoBxk+9brKB5AftBaQwPviUqSMnmollK6P4TxxWVlA2MNqe/ZWk5O4EkEjPz9alxalc2+qLGjcNOdxJJLAg8Hn2rKyvHiU1wHZmMEGSTnCVlZWV48f/9k=" alt="Thumbnail 2"></div>
+                        <div class="thumb-item"><img src="data:image/jpeg;base64,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" alt="Thumbnail 3"></div>
+                        <div class="thumb-item"><img src="https://plus.unsplash.com/premium_photo-1723672929404-36ba6ed8ab50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Thumbnail 4"></div>
+                    </div>
+                    
+                    <button class="thumb-arrow" type="button" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+                </div>
+
+                <!-- Seller Stats -->
+                <div class="seller-stats">
+                    <div class="seller-card">
+                        <p>Positive Seller Ratings</p>
+                        <h3>90%</h3>
+                    </div>
+                    <div class="seller-card">
+                        <p>Ship On Time</p>
+                        <h3>100%</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Product Info & Buttons -->
+            <div class="showcase-right">
+                
+                <div class="product-actions-top">
+                    <button type="button" aria-label="Share"><i class="bi bi-share"></i></button>
+                    <button type="button" aria-label="Add to Wishlist"><i class="bi bi-heart"></i></button>
+                </div>
+
+                <h1 class="product-title">Halal Beef Meat (Super-Premium Quality)</h1>
+                <h2 class="product-price-large">$23.00 <span>/ 500gm</span></h2>
+
+                <p class="product-short-desc">
+                    Perfectly ground lean, boneless cuts. Highly cleaned and prepared. Does not include any wings.
+                </p>
+
+                <div class="product-options">
+                    <div class="option-row">
+                        <span class="option-label">Net Wt:</span> 
+                        <span class="option-value">550gms</span>
+                    </div>
+                    <div class="option-row">
+                        <span class="option-label">Delivery:</span> 
+                        <span class="option-value">Today 8 Am - 11 Am</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons (Side-by-Side) -->
+                <div class="action-buttons-wrap">
+                    <button class="btn-add-cart" type="button" onclick="document.getElementById('cartModal').classList.add('active')">Add To Cart</button>
+                    <button class="btn-edit-delivery" type="button" onclick="document.getElementById('deliveryModal').classList.add('active')">
+                        Edit Delivery Info
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- ================= PRODUCT SPECIFICATIONS & TABLE ================= -->
+    <section class="product-specs">
+        <div class="specs-container">
+            <h2 class="specs-title">Product Details Of Halal Beef Meat (Super-Premium Quality)</h2>
+            
+            <div class="specs-grid">
+                
+                <!-- Left Text Descriptions -->
+                <div class="specs-text-list">
+                    <div class="spec-item">
+                        <strong class="spec-label">Beef Keema (Mince) :</strong>
+                        <p class="spec-desc">
+                            Perfectly Ground Lean, Boneless Goat Cuts Make For A Delicate, Fine-Grained Keema. Goat Keema Has Less Fat As Compared To Other Meats And Has A Distinct Flavour. The Keema Can Be Used To Make Different Dishes That Range From Keema Masala To Stuffed Keema Pao To Koftas.
+                        </p>
+                    </div>
+
+                    <div class="spec-item">
+                        <strong class="spec-label">Beef Keema (Mince) :</strong>
+                        <p class="spec-desc">
+                            Perfectly Ground Lean, Boneless Goat Cuts Make For A Delicate, Fine-Grained Keema. Goat Keema Has Less Fat As Compared To Other Meats And Has A Distinct Flavour. The Keema Can Be Used To Make Different Dishes That Range From Keema Masala To Stuffed Keema Pao To Koftas.
+                        </p>
+                    </div>
+
+                    <div class="spec-item">
+                        <strong class="spec-label">Beef Keema (Mince) :</strong>
+                        <p class="spec-desc">
+                            Perfectly Ground Lean, Boneless Goat Cuts Make For A Delicate, Fine-Grained Keema. Goat Keema Has Less Fat As Compared To Other Meats And Has A Distinct Flavour. The Keema Can Be Used To Make Different Dishes That Range From Keema Masala To Stuffed Keema Pao To Koftas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Variations Table -->
+                <div class="specs-table-wrap">
+                    <table class="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Net Wt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lamb Mince</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                            <tr>
+                                <td>Goat Keema</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                            <tr>
+                                <td>Lamb Mince</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                            <tr>
+                                <td>Goat Keema</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                            <tr>
+                                <td>Lamb Mince</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                            <tr>
+                                <td>Goat Keema</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                            <tr>
+                                <td>Goat Keema</td>
+                                <td>$23.00</td>
+                                <td>500gm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RATINGS & REVIEWS SECTION ================= -->
+    <section class="ratings-reviews">
+        <div class="reviews-container">
+            <h2 class="reviews-title">Ratings & Reviews Of Halal Beef Meat (Super Premium Quality)</h2>
+            
+            <!-- Summary Score and Progress Bars -->
+            <div class="rating-summary">
+                <div class="score-box">
+                    <div class="score-number">4.5<span>/5</span></div>
+                    <div class="score-stars">★★★★★</div>
+                </div>
+
+                <div class="rating-histogram">
+                    <div class="bar-row">
+                        <span class="star-num">5</span>
+                        <div class="bar-track"><div class="bar-fill bar-5"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-num">4</span>
+                        <div class="bar-track"><div class="bar-fill bar-4"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-num">3</span>
+                        <div class="bar-track"><div class="bar-fill bar-3"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-num">2</span>
+                        <div class="bar-track"><div class="bar-fill bar-2"></div></div>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-num">1</span>
+                        <div class="bar-track"><div class="bar-fill bar-1"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Bar & Sorting Dropdown -->
+            <div class="reviews-header-bar">
+                <h3>Product Reviews</h3>
+                
+                <div class="sort-dropdown">
+                    <button class="sort-trigger" type="button">
+                        <span>Sort : Relevance</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <!-- Dropdown options from Figma -->
+                    <div class="sort-menu">
+                        <a href="#">Recent</a>
+                        <a href="#">Rating : High To Low</a>
+                        <a href="#">Rating : Low To High</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Items -->
+            <div class="reviews-list">
+                <div class="review-item">
+                    <h4 class="reviewer-name">Ahmed Jalal</h4>
+                    <div class="review-meta">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-date">15 September 2021</span>
+                    </div>
+                    <p class="review-text">
+                        This Product Is A Very Good Quality Full. I'm Really Happy About This Product 🤩
+                    </p>
+                    <button class="btn-full-review" type="button">Full Review</button>
+                    <div class="helpful-btn">
+                        <i class="bi bi-hand-thumbs-up"></i> 0
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= QUESTIONS FORM SECTION ================= -->
+    <section class="product-questions">
+        <div class="questions-container">
+            <h2 class="questions-title">Questions About This Product</h2>
+            
+            <form class="questions-form">
+                <textarea placeholder="Enter Your Question Here" rows="6" required></textarea>
+                <div class="form-action">
+                    <button type="submit" class="btn-ask-question">Ask your questions</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- ================= YOU MIGHT ALSO LIKE SECTION ================= -->
+    <section class="related-products">
+        <div class="related-container">
+            <h2 class="related-title">You Might Also Like</h2>
+            
+            <div class="related-grid">
+                
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <div class="product-image"><img src="https://media.istockphoto.com/id/2238949206/photo/cattle-grazing-on-deforested-pasture-on-a-farm-in-the-amazon-rainforest-at-dusk-concept-of.webp?a=1&b=1&s=612x612&w=0&k=20&c=Pf6vZjtUuL2Nw2Q9ysZ56vrqpZfTGKJZpHuWF_i-8HQ=" alt="Product Image"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>( 03/ Kg )</span></p>
+                            <div class="product-rating">
+                                <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">( 990 )</span>
+                            </div>
+                        </div>
+                        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <div class="product-image"><img src="https://media.istockphoto.com/id/2249595818/photo/osso-buco-raw-steak-meat-ready-for-seasoning-raw-fresh-cross-cut-veal-shank-pepper-rosemary.webp?a=1&b=1&s=612x612&w=0&k=20&c=LZZDOvN6i3FnSEiD5b9APWls5ThAiIoowdWC3RwuTio=" alt="Product Image"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>( 03/ Kg )</span></p>
+                            <div class="product-rating">
+                                <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">( 990 )</span>
+                            </div>
+                        </div>
+                        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1723672929404-36ba6ed8ab50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Product Image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>( 03/ Kg )</span></p>
+                            <div class="product-rating">
+                                <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">( 990 )</span>
+                            </div>
+                        </div>
+                        <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- ================= ADDED TO CART MODAL ================= -->
+    <div class="modal-overlay" id="cartModal" aria-hidden="true">
+        <div class="cart-modal" role="dialog" aria-labelledby="cartModalTitle">
+            
+            <!-- Circular Close Button (Reused) -->
+            <button class="modal-close-btn" type="button" aria-label="Close Modal" onclick="document.getElementById('cartModal').classList.remove('active')">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <!-- Top Section: Added Product -->
+            <div class="cart-modal-top">
+                <div class="cart-added-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1668616814977-05202080759c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Special Halal Sheep Meat" class="reserved-img">
+                </div>
+                
+                <div class="cart-added-details">
+                    <h2 id="cartModalTitle">Special Halal Sheep Meat</h2>
+                    <p class="cart-added-desc">Fresh special halal sheep mea. Skinless and tender, the Springcut</p>
+                    <p class="cart-added-price"><strong>$23</strong> <span>(05/kg)</span></p>
+                    
+                    <hr class="cart-divider">
+                    
+                    <h3 class="cart-summary-title">My shopping cart</h3>
+                    
+                    <div class="cart-math-row">
+                        <span class="math-label">Subtotal</span>
+                        <div class="math-dashed-line"></div>
+                        <span class="math-value">$23</span>
+                    </div>
+                    <div class="cart-math-row">
+                        <span class="math-label">Total</span>
+                        <div class="math-dashed-line"></div>
+                        <span class="math-value">$23</span>
+                    </div>
+
+                    <div class="cart-modal-actions">
+                        <a href="cart.html" class="btn-go-cart">Go to cart</a>
+                       <!-- Inside your existing cart modal -->
+<button type="button" class="btn-checkout" onclick="document.getElementById('cartModal').classList.remove('active'); document.getElementById('checkoutModal').classList.add('active');">Check out</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Suggested Products -->
+            <div class="cart-modal-bottom">
+                <h3 class="suggested-title">Suggested For You</h3>
+                
+                <div class="suggested-grid">
+                    
+                    <!-- Suggested Card 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1723893905879-0e309c2a8e06?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Halal Sheep Meat" class="reserved-img">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3>Halal Sheep Meat</h3>
+                                <p class="product-price">$23 <span>( 03/ Kg )</span></p>
+                                <div class="product-rating">
+                                    <span class="rating-stars">★★★★★</span>
+                                    <span class="review-count">( 990 )</span>
+                                </div>
+                            </div>
+                            <button class="wishlist-btn" type="button"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <button class="order-btn" type="button">Order Now</button>
+                    </article>
+
+                    <!-- Suggested Card 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1690983325551-b922137727be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Halal Sheep Meat" class="reserved-img">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3>Halal Sheep Meat</h3>
+                                <p class="product-price">$23 <span>( 03/ Kg )</span></p>
+                                <div class="product-rating">
+                                    <span class="rating-stars">★★★★★</span>
+                                    <span class="review-count">( 990 )</span>
+                                </div>
+                            </div>
+                            <button class="wishlist-btn" type="button"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <button class="order-btn" type="button">Order Now</button>
+                    </article>
+
+                    <!-- Suggested Card 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1690983323238-0b91789e1b5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Halal Sheep Meat" class="reserved-img">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-details">
+                                <h3>Halal Sheep Meat</h3>
+                                <p class="product-price">$23 <span>( 03/ Kg )</span></p>
+                                <div class="product-rating">
+                                    <span class="rating-stars">★★★★★</span>
+                                    <span class="review-count">( 990 )</span>
+                                </div>
+                            </div>
+                            <button class="wishlist-btn" type="button"><i class="bi bi-heart"></i></button>
+                        </div>
+                        <button class="order-btn" type="button">Order Now</button>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- ================= CHECKOUT / SHIPPING MODAL ================= -->
+    <div class="modal-overlay" id="checkoutModal" aria-hidden="true">
+        <div class="checkout-modal" role="dialog" aria-labelledby="checkoutTitle">
+            
+            <!-- Circular Close Button -->
+            <button class="modal-close-btn" type="button" aria-label="Close Modal" onclick="document.getElementById('checkoutModal').classList.remove('active')">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <div class="checkout-grid">
+                
+                <!-- LEFT COLUMN: Shipping & Order Summary -->
+                <div class="checkout-left">
+                    <h3 class="checkout-section-title">Shipping</h3>
+                    
+                    <!-- Connected Shipping Info Box -->
+                    <div class="shipping-info-box">
+                        
+                        <!-- Address -->
+                        <div class="shipping-item">
+                            <i class="bi bi-geo-alt-fill icon-yellow"></i>
+                            <div class="shipping-text">
+                                <strong>Ahmed Jalal</strong>
+                                <p>Sylhet, Tero Ratan, Sylhet Sadar, Sylhe. Sunamgonj</p>
+                            </div>
+                            <button class="btn-edit-icon"><i class="bi bi-pencil-fill"></i></button>
+                        </div>
+
+                        <!-- Billing -->
+                        <div class="shipping-item">
+                            <i class="bi bi-file-text-fill icon-yellow"></i>
+                            <div class="shipping-text">
+                                <strong>Bill To The Same Address</strong>
+                            </div>
+                            <button class="btn-edit-icon"><i class="bi bi-pencil-fill"></i></button>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="shipping-item">
+                            <i class="bi bi-telephone-fill icon-yellow"></i>
+                            <div class="shipping-text">
+                                <strong>Phone Number</strong>
+                            </div>
+                            <button class="btn-edit-icon"><i class="bi bi-pencil-fill"></i></button>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="shipping-item">
+                            <i class="bi bi-envelope-fill icon-yellow"></i>
+                            <div class="shipping-text">
+                                <strong>Ahmedjalal@Gmail.Com</strong>
+                            </div>
+                            <button class="btn-edit-icon"><i class="bi bi-pencil-fill"></i></button>
+                        </div>
+
+                    </div>
+
+                    <h3 class="checkout-section-title">Order summary</h3>
+                    
+                    <!-- Summary Box -->
+                    <div class="order-summary-box">
+                        <div class="summary-row">
+                            <span>Subtotal ( 1 Item )</span>
+                            <span>$23</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping Fee</span>
+                            <span>$0</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <span>$23</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-proceed-pay" type="button">Proceed to pay</button>
+                </div>
+
+                <!-- RIGHT COLUMN: Product Details -->
+                <div class="checkout-right">
+                    
+                    <div class="checkout-product-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1668616816953-a02cd1a44027?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Special Halal Sheep Meat" class="reserved-img">
+                    </div>
+                    
+                    <h3 class="checkout-product-title">Special Halal Sheep Meat</h3>
+                    <p class="checkout-product-desc">Fresh Special Halal Sheep Mea. Skinless.</p>
+                    <p class="checkout-product-price"><strong>$23</strong> <span>(05/Kg)</span></p>
+
+                    <h4 class="delivery-option-title">Delivery Option</h4>
+                    <div class="delivery-option-box">
+                        <p class="del-price"><strong>$23</strong> <span>(05/Kg)</span></p>
+                        <p class="del-method">Home Delivery</p>
+                        <p class="del-time">Est. Arrival 1-3 Hour</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer class="footer">
+        
+        <!-- White Curve Cutout (Draws white top shape over dark background) -->
+        <div class="footer-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 L1440,0 L1440,0 C1320,20 1180,95 980,95 C800,95 650,20 420,20 C260,20 180,120 0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+
+        <!-- Decorative Right-Side Lines -->
+        <div class="footer-bg-lines" aria-hidden="true">
+            <svg viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M500,20 C380,20 280,120 250,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,50 C400,50 310,140 280,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,80 C420,80 340,160 310,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,110 C440,110 370,180 340,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,140 C460,140 400,200 370,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+            </svg>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Halal Meat</h3>
+                    <p class="footer-desc">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Company About</a></li>
+                        <li><a href="#">Our Servieces</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Articels</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Links -->
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Phone Contact</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Delivery Links -->
+                <div class="footer-links">
+                    <h4>Delivery Meethods</h4>
+                    <ul>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom">
+                <p>Copy Right By Halal Lab@Gmail.Com</p>
+            </div>
+        </div>
+    </footer>
+ 
+<!-- ================= DELIVERY INFORMATION MODAL ================= -->
+    <div class="modal-overlay" id="deliveryModal" aria-hidden="true">
+        <div class="delivery-modal" role="dialog" aria-labelledby="deliveryModalTitle">
+            
+            <!-- Circular Close Button (Reuses Login Modal styling) -->
+            <button class="modal-close-btn" type="button" aria-label="Close Modal" onclick="document.getElementById('deliveryModal').classList.remove('active')">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <h2 id="deliveryModalTitle" class="modal-heading">Delivery Information</h2>
+
+            <!-- Delivery Form -->
+            <form class="delivery-form">
+                
+                <div class="form-group">
+                    <label for="delFullName">Full Name</label>
+                    <input type="text" id="delFullName" placeholder="Enter Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="delPhone">Phone Number</label>
+                    <input type="tel" id="delPhone" placeholder="Please Enter Your Phone Number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="delRegion">Region</label>
+                    <div class="select-wrapper">
+                        <select id="delRegion" required>
+                            <option value="" disabled selected>Please Choose Your Region</option>
+                            <option value="barishal">Barishal</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="sylhet">Sylhet</option>
+                        </select>
+                        <i class="bi bi-chevron-down select-icon"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="delCity">City</label>
+                    <div class="select-wrapper">
+                        <select id="delCity" required>
+                            <option value="" disabled selected>Please Choose Your City</option>
+                            <option value="city1">City 1</option>
+                            <option value="city2">City 2</option>
+                        </select>
+                        <i class="bi bi-chevron-down select-icon"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="delArea">Area</label>
+                    <div class="select-wrapper">
+                        <select id="delArea" required>
+                            <option value="" disabled selected>Please Choose Your Area</option>
+                            <option value="area1">Area 1</option>
+                            <option value="area2">Area 2</option>
+                        </select>
+                        <i class="bi bi-chevron-down select-icon"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="delAddress">Address</label>
+                    <div class="select-wrapper">
+                        <select id="delAddress" required>
+                            <option value="" disabled selected>Please Enter Your Address</option>
+                            <option value="addr1">Home Address 1</option>
+                            <option value="addr2">Work Address</option>
+                        </select>
+                        <i class="bi bi-chevron-down select-icon"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit-delivery">Save</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

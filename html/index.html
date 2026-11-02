@@ -1,0 +1,1097 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Halal Meat | Fresh Quality Meat</title>
+
+    <link rel="stylesheet" href="/css/bucher.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Halal Meat</a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+                <li><a class="active" href="/html/index.html">Home</a></li>
+                <li><a href="/html/product-page.html">Products shops</a></li>
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('contactModal').classList.add('active');">Contacts</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="right-head">
+            <a href="#" class="search" aria-label="Search">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                <span>Search</span>
+            </a>
+
+            <a href="#" class="cart" aria-label="Shopping cart">
+               <!-- Replace your current cart link in the header with this -->
+<a href="#" class="cart" aria-label="Shopping cart" onclick="event.preventDefault(); document.getElementById('cartDrawerOverlay').classList.add('active');">
+    <i class="bi bi-cart3" aria-hidden="true"></i>
+</a>
+            </a>
+
+            <button class="login-btn" type="button" onclick="document.getElementById('loginModal').classList.add('active')">Login</button>
+        </div>
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+
+        <section class="hero">
+
+            <!-- LEFT CONTENT -->
+            <div class="hero-content">
+                <h1>The Best Meat Delivery Service</h1>
+
+                <p class="description">
+                    Businesses develop customer personas for a number
+                    of reasons. Among the reasons that companies create
+                    a non-existent person to plan around are the need
+                    to grow.
+                </p>
+
+                <a href="#featured-products" class="shop-btn">
+                    Shop Now
+                </a>
+
+                <ul class="features">
+                    <li>Qualityfull Meat</li>
+                    <li>Best delivery Service</li>
+                    <li>Best price performance</li>
+                </ul>
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="hero-visual">
+
+                <div class="hero-image">
+                   <img src="https://thumbs.dreamstime.com/b/kirkland-wa-usa-circa-november-raw-fresh-red-meat-refrigerated-section-pcc-community-markets-grocery-store-163898236.jpg" alt="">
+                </div>
+
+                <div class="discount-card">
+                    <h3>Discount</h3>
+
+                    <p>
+                        We Are Providing Up To
+                        <strong>20%</strong> Discounts
+                        For All Orders In This Month
+                    </p>
+                </div>
+
+                <div class="stats">
+
+                    <div class="review-card">
+                        <div class="review-icon">H</div>
+
+                        <div class="review-summary">
+                            <p>Total Reviews</p>
+                            <strong>⭐ (4.5 k)</strong>
+                        </div>
+
+                        <div class="rating-bars">
+                            <span>5 <i></i></span>
+                            <span>4 <i></i></span>
+                            <span>3 <i></i></span>
+                            <span>2 <i></i></span>
+                            <span>1 <i></i></span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>450k+</h3>
+                        <p>Trusted Clients</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>4.5 <i class="bi bi-star-fill"></i></h3>
+                        <p>Google Play Store</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= TRUSTED BY SECTION ================= -->
+    <section class="trusted-by" aria-label="Trusted Companies">
+        <div class="trusted-container">
+            <h3 class="trusted-title">Trusted By Over 1k+ Companies</h3>
+            
+            <div class="trusted-logos">
+                <!-- Replace text with actual SVG/Image logos from Figma later -->
+                <span class="logo-placeholder">Parshi</span>
+                <span class="logo-placeholder">Rose Garden</span>
+                <span class="logo-placeholder">Boscandela</span>
+                <span class="logo-placeholder">Parshi</span>
+                <span class="logo-placeholder">Parshi</span>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section
+        class="featured-products"
+        id="featured-products"
+        aria-labelledby="featured-title"
+    >
+        <div class="products-container">
+
+            <!-- SECTION HEADING -->
+            <div class="products-header">
+
+                <div class="products-heading">
+                    <h2 id="featured-title">
+                        Featured Meat’s Categories
+                    </h2>
+
+                    <p class="products-count">
+                        Showing 1–12 of 25 results
+                    </p>
+                </div>
+
+                <div class="products-sorting">
+                    <label for="product-sort" class="visually-hidden">
+                        Sort products
+                    </label>
+
+                    <select id="product-sort" name="sort">
+                        <option value="default">Default sorting</option>
+                        <option value="popular">Sort by popularity</option>
+                        <option value="rating">Sort by average rating</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT GRID -->
+            <div class="products-grid">
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://media.istockphoto.com/id/1134122695/photo/refrigerated-warehouse-hanging-hooks-of-frozen-lamb-carcasses-halal-cut.jpg?s=612x612&w=0&k=20&c=qKPQxA6UDz2WXWEIjTJ45lKBKkhOYGdzaEC2RpB49uE=" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+
+                            <p class="product-price">
+                                $23 <span>(03 / kg)</span>
+                            </p>
+
+                            <div class="product-rating">
+                                <span class="rating-stars"
+                                    aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">(990)</span>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn" type="button"
+                            aria-label="Add product 1 to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQge-Lo__eTPEQJSRnJCS6qNn6JR_gdycPw36dbr5rlmYhcWaIMFdOLyp8&s=10" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>(03 / kg)</span></p>
+
+                            <div class="product-rating">
+                                <span class="rating-stars"
+                                    aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">(990)</span>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn" type="button"
+                            aria-label="Add product 2 to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                       <img src="https://t3.ftcdn.net/jpg/02/12/49/10/360_F_212491059_02ch8r8eh9lL1xccj6P6D1SrDS4Ixkwo.jpg" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>(03 / kg)</span></p>
+
+                            <div class="product-rating">
+                                <span class="rating-stars"
+                                    aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">(990)</span>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn" type="button"
+                            aria-label="Add product 3 to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                      <img src="https://t3.ftcdn.net/jpg/04/72/68/74/360_F_472687435_MNi6N7IcGxTKWClvipcC0bcsSia3tQdE.jpg" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>(03 / kg)</span></p>
+
+                            <div class="product-rating">
+                                <span class="rating-stars"
+                                    aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">(990)</span>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn" type="button"
+                            aria-label="Add product 4 to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                       <img src="https://www.shutterstock.com/image-photo/raw-lamb-rack-isolated-fresh-260nw-2592887041.jpg" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>(03 / kg)</span></p>
+
+                            <div class="product-rating">
+                                <span class="rating-stars"
+                                    aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">(990)</span>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn" type="button"
+                            aria-label="Add product 5 to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQYbuoVyTAc0_w_DOvMUVuWssH4Ff1_-KlTnG_xJ4kM6ocmkFnwIbMGjo&s=10" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h3>Halal Sheep Meat</h3>
+                            <p class="product-price">$23 <span>(03 / kg)</span></p>
+
+                            <div class="product-rating">
+                                <span class="rating-stars"
+                                    aria-label="5 out of 5 stars">★★★★★</span>
+                                <span class="review-count">(990)</span>
+                            </div>
+                        </div>
+
+                        <button class="wishlist-btn" type="button"
+                            aria-label="Add product 6 to wishlist">
+                            <i class="bi bi-heart" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button class="order-btn" type="button">Order Now</button>
+                </article>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+            <nav class="products-pagination" aria-label="Product pages">
+                <a href="#" class="page-link active"
+                    aria-current="page">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link" aria-label="Next page">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </nav>
+
+        </div>
+     <!-- ================= TESTIMONIALS SECTION ================= -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            
+            <h2 class="section-title">Here's What Our Client Say About Us</h2>
+
+            <div class="testimonials-grid">
+
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="client-avatar">
+                        <!-- Replace src with your actual client image -->
+                        <img src="data:image/jpeg;base64,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" alt="Masud Rana" loading="lazy">
+                    </div>
+                    <div class="client-content">
+                        <div class="client-header">
+                            <h4>Masud Rana</h4>
+                            <span class="review-date">Jun 22, 2019</span>
+                        </div>
+                        <div class="client-rating">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="client-review">
+                            This Is Very Good Website . I Highly Recomit 👍 Adipiscing Elit. Sagittis, Sagittis Neque Egestas Velit, Nec, Malesuada Tellus. Urna
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="client-avatar">
+                        <img src="data:image/jpeg;base64,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" alt="Masud Rana" loading="lazy">
+                    </div>
+                    <div class="client-content">
+                        <div class="client-header">
+                            <h4>Masud Rana</h4>
+                            <span class="review-date">Jun 22, 2019</span>
+                        </div>
+                        <div class="client-rating">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="client-review">
+                            This Is Very Good Website . I Highly Recomit 👍 Adipiscing Elit. Sagittis, Sagittis Neque Egestas Velit, Nec, Malesuada Tellus. Urna
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="client-avatar">
+                        <img src="data:image/jpeg;base64,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" alt="Masud Rana" loading="lazy">
+                    </div>
+                    <div class="client-content">
+                        <div class="client-header">
+                            <h4>Masud Rana</h4>
+                            <span class="review-date">Jun 22, 2019</span>
+                        </div>
+                        <div class="client-rating">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="client-review">
+                            This Is Very Good Website . I Highly Recomit 👍 Adipiscing Elit. Sagittis, Sagittis Neque Egestas Velit, Nec, Malesuada Tellus. Urna
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="client-avatar">
+                        <img src="data:image/jpeg;base64,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" alt="Masud Rana" loading="lazy">
+                    </div>
+                    <div class="client-content">
+                        <div class="client-header">
+                            <h4>Masud Rana</h4>
+                            <span class="review-date">Jun 22, 2019</span>
+                        </div>
+                        <div class="client-rating">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="client-review">
+                            This Is Very Good Website . I Highly Recomit 👍 Adipiscing Elit. Sagittis, Sagittis Neque Egestas Velit, Nec, Malesuada Tellus. Urna
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+  <!-- ================= HOW IT WORKS GRID SECTION ================= -->
+        <section class="how-it-works-section">
+            <div class="works-container">
+ 
+                <!-- Fixed Title: Clean H2 tag with no links or bullet points -->
+                <h2 class="works-title"><a href="how-it-works.html">How It Works</a></h2>
+
+                <div class="works-grid">
+
+                    <!-- Card 1 -->
+                    <div class="work-card">
+                        <div class="work-image-wrap">
+                            <!-- Replace src with your actual image path -->
+                            <img src="https://plus.unsplash.com/premium_photo-1668616815661-0ee293ce2d49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="You Place The Order" class="step-img" loading="lazy">
+                        </div>
+                        <div class="work-info">
+                            <h4>You Place The Order</h4>
+                            <p>Find butcher man stock images in HD and millions of other royalty-free stock photos, illustrations and</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="work-card">
+                        <div class="work-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1615937662601-4724eceda00f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="We Assure The Items Are Organic" class="step-img" loading="lazy">
+                        </div>
+                        <div class="work-info">
+                            <h4>We Assure The Items Are Organic</h4>
+                            <p>Find butcher man stock images in HD and millions of other royalty-free stock photos, illustrations and</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="work-card">
+                        <div class="work-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1628543108325-1c27cd7246b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="You Place The Order" class="step-img" loading="lazy">
+                        </div>
+                        <div class="work-info">
+                            <h4>You Place The Order</h4>
+                            <p>Find butcher man stock images in HD and millions of other royalty-free stock photos, illustrations and</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="work-card">
+                        <div class="work-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1759329885432-68e79ec63749?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="You Place The Order" class="step-img" loading="lazy">
+                        </div>
+                        <div class="work-info">
+                            <h4>You Place The Order</h4>
+                            <p>Find butcher man stock images in HD and millions of other royalty-free stock photos, illustrations and</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    
+    </section>
+    <!-- ================= OUR BUTCHER TEAM SECTION ================= -->
+    <section class="butcher-team-section">
+        <div class="team-container">
+            <h2 class="team-section-title">Our Butcher Team</h2>
+
+            <div class="team-grid">
+
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="blob-wrapper">
+                        <!-- The decorative colored dots -->
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-blue"></span>
+                        <span class="dot dot-green"></span>
+                        
+                        <!-- The Image Blob -->
+                        <div class="blob-image">
+                            <!-- Replace src with your actual image path -->
+                            <img src="data:image/jpeg;base64,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" alt="Faruk Hasan" class="reserved-img" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="team-info">
+                        <h4>Faruk Hasan</h4>
+                        <span class="team-role">butcher leader</span>
+                        <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos,</p>
+                        
+                        <div class="team-socials">
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="blob-wrapper">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-blue"></span>
+                        <span class="dot dot-green"></span>
+                        <div class="blob-image">
+                            <img src="https://img.magnific.com/free-photo/stock-photo-portrait-stylish-businesswoman-with-braid-sunglasses-wearing-fashionable-bright-purple-suit-trench-coat-her-shoulders-she-is-holding-luxurious-leather-bag-her-hand_132075-9374.jpg?semt=ais_hybrid&w=740&q=80">
+                           </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Jalal Ahmed</h4>
+                        <span class="team-role">butcher leader</span>
+                        <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos,</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="blob-wrapper">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-blue"></span>
+                        <span class="dot dot-green"></span>
+                        <div class="blob-image">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIwAjQMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAFBgMEBwIBAAj/xABEEAACAQIEAgYHBAgFBAMBAAABAgMEEQAFEiEGMRMiQVFhgQcUMnGRobEVQlLRIzNicoKSosE0ssLS4VNzk/BEY/EW/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QAIREAAgIDAAMAAwEAAAAAAAAAAAECEQMSIQQxQRMiUTL/2gAMAwEAAhEDEQA/ANVwp+koX4cBZrEVCW/qw2bHlue9sKvpJW/C7kc+nS2r34VH2NZlFrNfHTPqFyLHsHYMRaWPbj4obXvt+1h4B87Ee0APebY6jdgLhyRjlES9jsfA46umqynbGnHtyBcgXtflj4CWYaYtbnuUXwW4dy6Gvkklq2ENJAAWItdyeSrtz2wyDOsroVEdIyR9GBII7CzKSCe29wN/MjGGiaIJo0j6SKRbKPaUjE+YC7RMAT1ANQHb3Ybf/wCqySNvaDwSWBF91FrE+PIH3354VMzzGBs4nSnQGEjVqUe14+B91u33nNu0FrSs8hpoTGJJJGuV61gPrvifo6eMkR3Zxy1HEFijAKSUK7G+PTq1A9p7ME2CokoI03a5XuUWx1EUuw07HsP/AOYhjjaRwkZ1E8gtyfhiwaGrh67Uk6r3vCVt8cCHaJ4QFmjkupYMNvPDkqFhcEH3HCOm7rv94YfAATqVAd9gRa2AkcdR3SWLe/XHZ44b6J7UkGkbdEv0wpxo/TRluYYdbsw2UG9FB+4MCjGRKMK/pEBbhie2+mWP2v3v+cMyahzwvceo0vC1UkbEWaM3JvbrjGR9nP0ZA2ojUSoHux2tNIewsvfyxcpoSkcjLTJUlRfUrOCB8fqMcVFc7J+ijaInay6ZFPmRf5Yq0YrdES0ur2Shb345dG19VEPuIxVq6itniMPrdTYL7KuQPh3YuUdFUSRC0T9Go06vZVfM7YygrRPQUs+ZTplqymNZV1uQbDbt9/LF9+AYOljKVklrAHUOzwPhi5lkH2RUwVdfUQhZo2VSCfaB2Xcbn3YuRcS5VNKY/W1UDkWuPriae18KcahXSxlfo8yaSJWmklaQeO2KfEvD9Bw5WUs9NTPMJUZQ7v1UNjfb3E4KRcU5NQuOlro5SRcCJtW3lj3PMwy3iOkhpqCuBkMitbo2BVSdLE3FrC4wP7J2w5OHpMTI6eRInikBJiewPaR2Y5KGzb7DcafywY4jooaGteOHXoABUMQWvbfcW588CnBIK9ttr72xQnZO1Q1TUtTV1NZGsknRRyoFRpCFUaQbAefhj7McuakyrMZiqjUyWNv2lG3lg06TUEit+s9ZWOVDEBcAqBvy7r+eKufTSy5JWdJCyrqXm9/vLytg2Ii7Ymx7FCU2v39mH8WYX1AD/wB8MZ/EQEHVY25i3LGgIy6OZv36cJmPPhqE0RLey3Pv88NmX/4KAdyDCrGw6RUUaRq5+HnhroLeqRe7+5wMQWVxfy7sDOJUU5JMsraN15qDp6w7wcFoxYXGwwK4pQPkdUGbSOrdn7esuMXs1+hGmSMIFXMOujdUk8mPI9XfzuDgdNRrIVMlUrNqGpjCx/In44v0nqc9WlPFV0rzTSosaCVSSdu7ByfIa6LVqpGPXB6tm7u7FFsRwXKjhmGngWrSrZtXUMctKw3sDsQx7xzHnialykyRJ0xVgidVdPI74dK6nIy2NHQhha4IPcL/AE+WB0cCqm3dhjRiYFqsrFRliUabaD1FUAAG9/iRcXwo1PC0s1TFFEssblrEsumwPPwPljSqelNTNLDFvNHCZQg5kC4+Z2+PdgPmbSzJHJSkjUL603Ybd23vxLkbgy3DWVKwFxLwWYcwhnpi4jliUhlOoq4ABBvzB+vlg7wzksWUU9RX5ldJDEAbgGyq2s7Ds2Hz8MdZbNWzTKzx1Diw2kQBRb+L44946zmnp8qamAPTVMZj0X5A8zgNpSdDZQjjVgTO62KtrWqItlkbqK29gFCr8gMD2B+8CW7rYBQVc0EYCsDGfuuOqfy8rYux5u4j0shUfst/bFWnOEP5e9NJyuZVqSpj1dIY91ueUSHf+bE3ER1ZDV3IXq9m24ZcJVFxVURl3hSJ5VUErKpAIAAvt2gAfPF/Jq2uz6aKjqJIlppGIboCSzEA2Gok9oGCceC4voOTX1mZkN+QuN+zD3YMie0NNrYVc0oZcqqXSQao47aX7W2FhhppmMi9dgvVA8sTzKV0kXSsi6U64PMC2GnLtXqcdz+IfM4VLgG5kAHcMNeX/wCET95v8xwKBZzGOr1dm78BON0L8MZmGFx0QJBPiMHI7jngTxboPDmZdO6xp0LMWKlgvLc23IxhrMi4UQRcTZUyj/5kY7t9Qx+gAOekAX8sYBllfltDmFNWSTSyNTypNanp76iGB09Yr8cPMvpVgf8Aw+TytftnqFQH3kXxUk36J5OjQ2UNzCnwO+M14i4josmeSOMrUTreyqdhv24G8Q8e1uZ0pipWjpFP6xULamHdqIBt8P7YzbNavmD1r9vj7sehj8XSO2UlllcnrEO5RxvV5XxgubVDaoZv0VQgGwi25eItf3jxONSzHKWmc5jkjRzRz2kMJPVe+5ZCO087du/uP57qJRILjnjYvQ1xIs2SS5ZVSfpaJrxk3/VHl8CCPMYmzY4y4U4Zyh0IUS1am0cSqWPWDm5X88dZ0tNTQUXrOk1EvSlZpEF20le08t74o8Vekegps1ehp8olaeNtLz1D9CCO8BQxI9/yxDxtXzZrwvkmdGkjpo4ZnhCwyalCPdQdwDzjAt44m8fDH8qTKPIyuWO0MvD81Q1PekgjqINarLHIb+4qOXvxk/Es1Mc+rkpqM0qJO6dEp2VgbEjzvti/lud1lDM7w1M0aub2SQ7Ww8cJ16cRxTR11QHqYLao5adJA8Z5NbTcdoOLPI8SWFbfCLHmWT9TKVnAYOjFCL3BO5vz+tsT0tRPRSLNTStG6G4K7HGwVPCGVzatVNlTX76doCf5WH0wNm9HlGQ5go9Cdppa7VfydcS7j3AUHzwZvWM9fVaHQHTIf1bgbi47GttthvjrNIhDFHSSMMGsTcW57gYFPwHBEday5hAV3vLSrKD5o2CtHFm1HDHTLWUjxJEscbSU7wuoFhzII5XxjqRvYqi5FUrJsrah3AXw45dpNGu33m7f2jhapkzJqrVSVMFtJNgytvbke35YaaFHaFhOqBw7XCCw78KaoYnZ4Bc2PW92A3FqB+GM0TlekkuPLBpB1rn+nAzilNXDeZBe2kl2/hOACMGMQUEhRtvywBzWZ2qyoLBEOwF7HxwzuSI7lV6o7ueFiqCLISikMTu2q/y7ceh48eORJkfaPoK6VkCSkFRyJYXGIZ5Ol54gZlPtoL963/PHxbFDyScaYrRXaODhh4BzUZRxTR1Ev6iR+hmB/A+1/I2P8OF447WxN9/EH3YTQxM2D0yZFEuWRVY0iaNuq9t7E2K37j9cRZdUnNfQvPTlSXoJWQm3NSdSnyL/ABXHXF2ZnOvRlldcx1O0ZjnJ7ZEsCfMrfzwK9GNX0mU8QZS5JWakEqKewo1v9V/LEz5NMpX7QFiOUyRRyG4L2uO7DH6PK31PjOiVgOjqUendGAtuLqPiBhboX9WrTGSF9XmB1c7bjs7e3DI9JCjwZs7lDBIksal9LOvSAk+F+zkdx23A9HPnuCi/pDjx1K/4bgsEI50+k94OkfI459TgBYsSv7V9X+a+EFOPMqZSIps5pWXmHVWH1OLkXGuWyo0f26QT92emYbW71GPK1ZZshqFCfaiqnBH3ixIP8pGJIaWpDkNVCQDkoFh/fAwcS5XK0a0eb5WwZfZknCm9vE4tU2YyyIGSGmlvb9TVhvlbGBWixDA3rqyTwwaxfrKtyNuY7sXoAoMutbnX3eAxSjrX6W0mX1KcusNBXf3HF6PSzSkH7/8ApXGM5EQNueKHERB4fzAA7+qyD+k4KGJu5PngHxpXplPDVbPUsv6SJokTVa7sCAP7+WMjFuVGykkjBswq0ijVdQJPO7gW+OAVTKpbUHlP7Sxgj64sVwikYyEsGbcsikj57YFyKg9lv6bD4Y9V3COqIlUnZ8zKeR/pt9Mc6scnbnjgE4Q5B0WLX5Y+BA545RsenBowbcrzGSfg6uydjcJL6wngCtmHyX5494DqvVuIaPUf0c4eF/EOjL9bHAHJ6noJKiMnaamlTzKm3ztifh+YR5pQs76EFTFqY9g1C/yvibLySKcX+WWc0Bp+IKiN+QU38d8TZ5xXU5vS01DPTgrHKsivrF7BCum1rAHY+XbijnE2rPKhmPWQG9t8Cg4NQLHlyxVFpxV/CaXJM1NcuyyqyqGV5Wj2XWQBpEmk3AvzHPFd+G6OQ3irreBiYd/544oXjquFYQApEc4DC+ykg4prSwLOBoFipwrIkpNGRbaLzcNKQAtbAQeQZrW+OO14OnniWSmhR1Cjk/bYYE9EYXVonkTrDYE9vnhkr6BJ59dutpHL3YBpB27LfBmS1+WcTQrWdOsbK2kM5KN1T2cu3uxqcOxlA/H/AKVxmvBdMafPIQxY3va/O1uzuxpcPty/vD/KMImqY6DtH1bWxUUTPUGwvZVA3OMZ9LXEYzSvpMupgwip0LsOep25GwvyH+Y4epqyfMKSnnq0WFjGGZAdkJ54wbNsy9fzCqq5dRaaRiBfs7PgLDtxX42NR/eRPkm5OkRTQyHfrj95QPqcUZbre5W47L4kMQY2jhDD9/8A4GCfCuUUtdnC/autaOPd4o3USTHuW5+PbbYHtD8s/qQMIi9JuLjHAwx8cZbBl+dyikjdKeZRKisioR3iykjmDbwOFu4xK3Y0kU4kBvyxWBOJFfSbHBJmNE0bmN1b8JHniQsUuQb6ORPvxAdwfDHch6qi/MYXlppUMx8s6p3k/TSvdmPae3FdHsb9uGvhvIoq/J81NSrpVNTa8vGhiZZAQxtYciF07/iwv5ZRionu3XT8KYdFOTUULk0rbGLh/Ngkb0nVYyFX2BA1C/aT4nB2FzIVLqoIX8RwM6BIkhjjjCgEaerbf88M1NkVcn6yncbEdndhnmYnjaf9FYZqa4UHh16LuBci3Ww06EZhq6QXUWAQEdvecWslyKIUksOYPYC7hrgWax2Hhyx7DEx6O/4f7nEl8G/STh1VTiCnVCwYLuGUD6YfYiBJKD3j6YSMpQpxFA1xewB8N8O6KTNLt3YVk+DcfoznMc5Ws4WzqpgKxyw0shCq9yvUNt9sYQRd+rv7zfGwQZXOiToY16OeEwyqGPXRgQR/z7sJU/BFa80yUdVSzFDbo31pJf8AlK/1YoxZFrQucKYrJJIvJsTrUMLA8u2++J6rJczo2cT0M1kNmdF1qP4luMD1YN7JB9xvh0Zr0BqXZp+njQTtI4jFkDNcKPDuxHDHSye2lvM4qlieXs49DlTYc8Fur9GasILSUH/Tb+Y/njQvRlwZwzxFT5icxpJJnpCjD9O6gqwOxAI7VOMuErd/wxsfoUZKbhviGtc2LyLELn8KbfOTA55p43S6bjTUlY2Q8L8IQRiKLIMta3ZNTqxP8RufjgbnnCPDksOk8KxlWViJcvXQ0Z9ynn774slrLvpv32wA4o4kpcjpHHT1dNWvCxpgiKUd/Hqmwud9x4Y8zaR6ukEF+Hs7pqWOItns7wRdRY1WNYitgAANyLbduCkGQcK5vOa37DijkbfpY0MYa/fpsD5/HCzwpmrNRu0WY06RyLqSRbkD38vqOzDLSZj0UctRU16NBHGXlcsQmkcydzt8ccpSi7TOyY4y+CpxTkVPl8wq8sBWalqEBpWYsko1rp0m9xcsoIO/Ox2wzLnmcWu1FFa//Sf/AHYU8wzmjznMI6TL6vpa2pqQIVjDh4o0KOzMSBY2Vre9bduCjZRmd7faFfb/AL7fniqeWcox2fSBYoqT1DP29mWoD7Ogt/2WFvniRc4zCG8IyuEW5DQ9vhgF9lZta32jWe/pmx4+T5mTc5lWf+VvpfCtwvxoKyZpWSTw1H2OjTI11ZdanzO98Xos7zNQW+yx1u0s3+3CucrzQAkZlXWHIrO354scN5v6jl4TM6qarlY6g0ju5AtyvcY32c1Qy02X9OmuHQ63IurA3tiumQPFmjVJgUowJbl7WwHb3YER8RTDNlgFDQAb2cQkMNr87+AwcfMJTq1JEdPK63tthalQVWTw5fOItUKaH1nUpe1wTz945+Xw5zDJcvnRjm+W0M8YBaR5okYJYc7nl/7500zmpeoETJFY9unf627cKPpizWsh4bpaWGXo4q2oEU+jYsljtfyF++2Oirfs5sy7iCuoq/Nqqpy6lip6JnIpo40CjSNgSoHM8/O2Bi1HRi3RRsO9lucTTIqEBRYDFR8XNUidPp1JMsj6gmjwHLEnrdX6o9GlTKKN21tAJGCM34it7X2G9r7DECjEqgYxLlM66Zc+08ySGwzOtC/h9Yf88Sz00zwUlZPWJVGcHq9KWeOx3DXuRioACbHlidUXmFAv3DGzxpQckFCTclFsOejrMxScRpRVUrClqVcIh9nprXQ+ZGn+IY0nOOKKnLXggiyunZ5KdZJDKSSQ3Ye7luPHGH1jtTvHNCxWRGDKw+6ewj3HfH6bjyTLc4pKKvr6RXnmp4yxV2UbqCbAHvJxLFJ9HSbT1sziDib1apSvpuH8thekp2hUwIUVUdlNrDxG37zd+LQ9IuZWuuXUY/n/ADxoR4KyJIHC0r2ktqHStvy8cVG4FyDqN6tJc/8A2tgqsBWIkvpEzVRcUVD/AON/92PJOOc96FXeny8dILr+gc2H8+Hep4GyIJ1YJF90pwMzPh/L6eEIiORGCFu52+GO1RjbAGVcW53X5lBBN6mIZJQshSFlOm9tiXO+O5Y+ileJ9ijFbe7HOWwxxZzRCNAAZRzJP3vHFnOhbN60DkJ2+uBaphRf9P/Z" alt="Rakib" class="reserved-img" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Rakib</h4>
+                        <span class="team-role">butcher leader</span>
+                        <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos,</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card">
+                    <div class="blob-wrapper">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-blue"></span>
+                        <span class="dot dot-green"></span>
+                        <div class="blob-image">
+                            <img src="data:image/jpeg;base64,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" alt="Arman Nijum" class="reserved-img" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Arman Nijum</h4>
+                        <span class="team-role">butcher leader</span>
+                        <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos,</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+<!-- ================= FAQ SECTION ================= -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                
+                <!-- LEFT SIDE: Image Box -->
+                <div class="faq-image-wrap">
+                    <!-- Replace the src below with your actual image path -->
+                    <img src="https://plus.unsplash.com/premium_photo-1668616816933-f3874102f54b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="FAQ Consultation" class="faq-img" loading="lazy">
+                </div>
+
+                <!-- RIGHT SIDE: Accordion List -->
+                <div class="faq-accordion">
+                    
+                    <!-- FAQ Item 1 (Active/Open by default) -->
+                    <div class="faq-item active">
+                        <button class="faq-question" type="button">
+                            what can I expect at my first consultation
+                            <span class="faq-icon"><i class="bi bi-dash"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos, Find Butcher</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            what can I expect at my first consultation
+                            <span class="faq-icon"><i class="bi bi-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos, Find Butcher</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            what can I expect at my first consultation
+                            <span class="faq-icon"><i class="bi bi-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos, Find Butcher</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">
+                            what can I expect at my first consultation
+                            <span class="faq-icon"><i class="bi bi-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Find Butcher Man Stock Images In HD And Millions Of Other Royalty-Free Stock Photos, Find Butcher</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script to make the Accordion open and close -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const icon = button.querySelector('i');
+                
+                // Close all other open items first (Optional, but keeps it clean)
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('i').classList.replace('bi-dash', 'bi-plus');
+                    }
+                });
+
+                // Toggle the clicked item
+                faqItem.classList.toggle('active');
+                
+                // Swap the Plus and Minus icons
+                if(faqItem.classList.contains('active')) {
+                    icon.classList.replace('bi-plus', 'bi-dash');
+                } else {
+                    icon.classList.replace('bi-dash', 'bi-plus');
+                }
+            });
+        });
+    </script>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta-banner" aria-label="Contact Us">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Have You Any Other Questions?<br>Please Contact Us</h2>
+                <p>We Handle The Sales, You Focus On Our Product</p>
+                <a href="#contact" class="cta-btn">CONTACT US</a>
+            </div>
+            <div class="cta-illustration">
+                <!-- Drop the mailbox export from Figma here later -->
+                <div class="mailbox-placeholder"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= SLIDE-OUT CART DRAWER ================= -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay" aria-hidden="true">
+        
+        <!-- The Drawer Container -->
+        <div class="cart-drawer" role="dialog" aria-label="Your Cart">
+            
+            <!-- Close Button -->
+            <button class="modal-close-btn drawer-close" type="button" aria-label="Close Cart" onclick="document.getElementById('cartDrawerOverlay').classList.remove('active')">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <h2 class="drawer-title">Your Cart</h2>
+
+            <!-- Scrollable Items Area -->
+            <div class="drawer-scroll-area">
+                
+                <div class="drawer-items-list">
+                    <!-- Cart Item 1 -->
+                    <div class="drawer-item">
+                        <div class="drawer-item-img"><img src="https://images.unsplash.com/photo-1628543108325-1c27cd7246b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Halal Beef Meat" class="reserved-img"></div>
+                        <div class="drawer-item-info">
+                            <div class="drawer-item-top">
+                                <div class="item-title-wrap">
+                                    <h4>Halal Beef Meat</h4>
+                                    <span>( 00/ Kg)</span>
+                                </div>
+                                <button class="btn-remove-item" type="button" aria-label="Remove item"><i class="bi bi-trash"></i></button>
+                            </div>
+                            <div class="drawer-item-bottom">
+                                <div class="qty-control">
+                                    <button class="qty-btn" type="button"><i class="bi bi-dash"></i></button>
+                                    <span class="qty-value">1<span>kg</span></span>
+                                    <button class="qty-btn" type="button"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <p class="drawer-item-price">$23.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="drawer-item">
+                        <div class="drawer-item-img"><img src="https://plus.unsplash.com/premium_photo-1668616816933-f3874102f54b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Halal Beef Meat" class="reserved-img"></div>
+                        <div class="drawer-item-info">
+                            <div class="drawer-item-top">
+                                <div class="item-title-wrap">
+                                    <h4>Halal Beef Meat</h4>
+                                    <span>( 00/ Kg)</span>
+                                </div>
+                                <button class="btn-remove-item" type="button"><i class="bi bi-trash"></i></button>
+                            </div>
+                            <div class="drawer-item-bottom">
+                                <div class="qty-control">
+                                    <button class="qty-btn" type="button"><i class="bi bi-dash"></i></button>
+                                    <span class="qty-value">1<span>kg</span></span>
+                                    <button class="qty-btn" type="button"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <p class="drawer-item-price">$23.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="drawer-item">
+                        <div class="drawer-item-img"><img src="https://images.unsplash.com/photo-1690983322025-aab4f95a0269?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Halal Beef Meat" class="reserved-img"></div>
+                        <div class="drawer-item-info">
+                            <div class="drawer-item-top">
+                                <div class="item-title-wrap">
+                                    <h4>Halal Beef Meat</h4>
+                                    <span>( 00/ Kg)</span>
+                                </div>
+                                <button class="btn-remove-item" type="button"><i class="bi bi-trash"></i></button>
+                            </div>
+                            <div class="drawer-item-bottom">
+                                <div class="qty-control">
+                                    <button class="qty-btn" type="button"><i class="bi bi-dash"></i></button>
+                                    <span class="qty-value">1<span>kg</span></span>
+                                    <button class="qty-btn" type="button"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <p class="drawer-item-price">$23.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suggested Essentials Carousel -->
+                <div class="drawer-essentials">
+                    <p class="essentials-title">Shop More Easy To Use Essentials</p>
+                    
+                    <div class="essentials-slider">
+                        <button class="essentials-arrow"><i class="bi bi-chevron-left"></i></button>
+                        
+                        <div class="essentials-card">
+                            <div class="essentials-img"><img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sheep Meat" class="reserved-img"></div>
+                            <div class="essentials-info">
+                                <h4>Halal Sheep Meat</h4>
+                                <p><strong>$23</strong> <span>( 03/ Kg )</span></p>
+                            </div>
+                            <button class="btn-add-essential" type="button"><i class="bi bi-plus"></i></button>
+                        </div>
+                        
+                        <button class="essentials-arrow"><i class="bi bi-chevron-right"></i></button>
+                    </div>
+                    
+                    <div class="slider-dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Fixed Bottom Summary & Checkout -->
+            <div class="drawer-footer">
+                <div class="drawer-summary">
+                    <div class="drawer-math-row">
+                        <span>Subtotal ( 1 Item )</span>
+                        <div class="math-dashed-line"></div>
+                        <span>$23</span>
+                    </div>
+                    <div class="drawer-math-row">
+                        <span>Shipping Fee</span>
+                        <div class="math-dashed-line"></div>
+                        <span>$0</span>
+                    </div>
+                    <div class="drawer-math-row total-row">
+                        <span>Total</span>
+                        <div class="math-dashed-line"></div>
+                        <span>$23</span>
+                    </div>
+                </div>
+                
+                <button class="btn-drawer-checkout" type="button">CHECK OUT</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- ================= CONTACT MODAL ================= -->
+    <div class="modal-overlay" id="contactModal" aria-hidden="true">
+        <div class="contact-modal" role="dialog" aria-labelledby="contactTitle">
+            
+            <!-- Circular Close Button -->
+            <button class="modal-close-btn" type="button" aria-label="Close Modal" onclick="document.getElementById('contactModal').classList.remove('active')">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <div class="contact-grid">
+                
+                <!-- Left Side: Pink Illustration Box -->
+                <div class="contact-left">
+                    <!-- Replace with your actual speech bubble illustration image -->
+                    <img src="images/contact-illustration.png" alt="Contact Us Chat Bubbles" class="reserved-img">
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact-right">
+                    <h2 id="contactTitle">Contact</h2>
+                    
+                    <div class="contact-info-text">
+                        <p>Halallab@Gmail.Com</p>
+                        <p>Received A Damaged Item? Fill Out This</p>
+                        <p>Well Get Back To You Shortly</p>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" rows="3" required></textarea>
+                        </div>
+                        
+                        <!-- Submit Button aligned to the right -->
+                        <div class="submit-wrapper">
+                            <button type="submit" class="btn-send">send</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ <!-- ================= FOOTER SECTION ================= -->
+    <footer class="footer">
+        
+        <!-- White Curve Cutout (Draws white top shape over dark background) -->
+        <div class="footer-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 L1440,0 L1440,0 C1320,20 1180,95 980,95 C800,95 650,20 420,20 C260,20 180,120 0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+
+        <!-- Decorative Right-Side Lines -->
+        <div class="footer-bg-lines" aria-hidden="true">
+            <svg viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M500,20 C380,20 280,120 250,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,50 C400,50 310,140 280,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,80 C420,80 340,160 310,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,110 C440,110 370,180 340,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,140 C460,140 400,200 370,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+            </svg>
+        </div>
+        <!-- ================= UNIVERSAL FOOTER ================= -->
+    <footer class="footer">
+        
+        <!-- Solid Dark Wave (Overlaps the space above the footer) -->
+        <div class="footer-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,120 C200,120 350,20 500,20 C750,20 900,100 1100,100 C1300,100 1400,20 1440,0 L1440,120 L0,120 Z" fill="#292c3d"></path>
+            </svg>
+        </div>
+
+        <!-- Decorative Right-Side Lines -->
+        <div class="footer-bg-lines" aria-hidden="true">
+            <svg viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M500,20 C380,20 280,120 250,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,50 C400,50 310,140 280,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,80 C420,80 340,160 310,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,110 C440,110 370,180 340,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+                <path d="M500,140 C460,140 400,200 370,350" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+            </svg>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Halal Meat</h3>
+                    <p class="footer-desc">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Company About</a></li>
+                        <li><a href="#">Our Servieces</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Articels</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Links -->
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Phone Contact</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Delivery Links -->
+                <div class="footer-links">
+                    <h4>Delivery Meethods</h4>
+                    <ul>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom">
+                <p>Copy Right By Halal Lab@Gmail.Com</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ================= EXACT FIGMA LOGIN MODAL ================= -->
+    <div class="modal-overlay" id="loginModal" aria-hidden="true">
+        <div class="login-modal" role="dialog" aria-labelledby="modalTitle">
+            
+            <!-- Circular Close Button -->
+            <button class="modal-close-btn" type="button" aria-label="Close Modal" onclick="document.getElementById('loginModal').classList.remove('active')">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <!-- Header Section -->
+            <div class="modal-header-text">
+                <h2 id="modalTitle">Welcome! Please Login To Continue</h2>
+                <p class="modal-subtitle">
+                    New Member? <a href="#" class="register-link">Register Here</a>
+                </p>
+            </div>
+
+            <!-- Login Form -->
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="loginEmail">Phone Number Or Email</label>
+                    <input type="text" id="loginEmail" placeholder="Please Enter Your Phone Number Or Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Please Enter Your Password" required>
+                </div>
+
+                <!-- Forgot Password (Right Aligned) -->
+                <div class="form-meta">
+                    <a href="#" class="forgot-link">Forget Your Password ?</a>
+                </div>
+
+                <button type="submit" class="btn-submit-login">log in</button>
+            </form>
+
+            <!-- Divider -->
+            <div class="social-divider">
+                <span>Or</span>
+            </div>
+
+            <!-- Social Login Buttons -->
+            <div class="social-login-group">
+                <button type="button" class="btn-social">
+                    <i class="bi bi-google" style="color: #DB4437;"></i> Google
+                </button>
+                <button type="button" class="btn-social">
+                    <i class="bi bi-linkedin" style="color: #0077b5;"></i> Linkedin
+                </button>
+                <button type="button" class="btn-social">
+                    <i class="bi bi-facebook" style="color: #3b5998;"></i> Facebook
+                </button>
+            </div>
+
+        </div>
+    </div>
+    
+
+      
+</body>
+</html>
