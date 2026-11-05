@@ -5012,7 +5012,7 @@ img {
 .contact-left img {
     max-width: 80%;
     height: auto;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 /* Right Form Section */
